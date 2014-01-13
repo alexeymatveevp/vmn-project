@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import RequestContext, loader
 from students.models import *
-from students.json_model import *
 from django.core import serializers
 import json
 
