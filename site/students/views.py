@@ -7,9 +7,11 @@ import json
 
 def index(request):
 	questions = [row.question for row in Question.objects.all()]
+	skills = [row.name for row in Skill.objects.all()]
 	template = loader.get_template('index.html')
 	context = RequestContext(request, {
 		'questions': questions,
+		'skills': skills
 	})
 	return HttpResponse(template.render(context))
 
@@ -54,13 +56,42 @@ def student_descr(request, name):
 	return HttpResponse(json.dumps(output))
 
 """
-List of all skills.
-
+List of all skills with parent-child relationship.
+[{
+    "name": "memory",
+    "parent": ["basic_computing"],
+    "child": ["caching", "operating_systems"]
+}, {
+    "name": "processor",
+    "parent": ["basic_computing"],
+    "child": ["operating_systems"]
+}, {
+    "name": "operating_systems",
+    "parent": ["memory", "processor"],
+    "child": []
+}, {
+    "name": "caching",
+    "parent": ["memory"],
+    "child": []
+}, {
+    "name": "basic_computing",
+    "parent": [],
+    "child": ["memory", "processor"]
+}]
 """
 def skills(request):
 	output = []
 	for row in Skill.objects.all():
-		output.append(row.name)
+		skillName = row.name
+		skill = dict()
+		skill['name'] = skillName
+		skill['parent'] = []
+		skill['child'] = []
+		for parent in SkillsRelationship.objects.filter(child=skillName):
+			skill['parent'].append(parent.parent.name)
+		for child in SkillsRelationship.objects.filter(parent=skillName):
+			skill['child'].append(child.child.name)
+		output.append(skill)
 	return HttpResponse(json.dumps(output))
 
 """

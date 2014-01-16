@@ -1,24 +1,17 @@
+{% load staticfiles %}
 <html>
   <head>
-    <script type="text/javascript" src="js-graph-it.js"></script>
-    <link rel="stylesheet" type="text/css" href="js-graph-it.css">
-    <style>
-      .block { position: absolute; }
-    </style>
+  	<script src="{% static "jquery-1.9.1.min.js" %}"></script>
+    <script type="text/javascript" src="{% static "js-graph-it.js" %}"></script>
+    <script type="text/javascript" src="{% static "script.js" %}"></script>
+    <script type="text/javascript" src="{% static "tree_renderer.js" %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "js-graph-it.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
   </head>
-  <body onload="initPageObjects();">
-  	<div class="canvas" id="mainCanvas" style="width: 350px; height: 250px; border: 1px solid black;">
-  	<ul>
-	{% for q in questions %}
-		<li class="block">{{ q }}</li>
-	{% endfor %}
-	</ul>
-	<ul>
-		<li id="1" class="block" style="left: 10px; top:40px;">hello</li>
-		<li id="2" class="block" style="left: 10px; top:20px;">there</li>
-	</ul>	
-	<div class="connector 1 2"></div> 
-	</div>
+  <body>
+  	<div class="canvas" id="mainCanvas" style="width: 100%; height: 100%; border: 1px solid black;">
+      <div id="skill_tree"></div>
+    </div>
   </body>
 </html> 
 
