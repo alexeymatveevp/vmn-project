@@ -15,6 +15,16 @@ def index(request):
 	})
 	return HttpResponse(template.render(context))
 
+def custom(request):
+	questions = [row.question for row in Question.objects.all()]
+	skills = [row.name for row in Skill.objects.all()]
+	template = loader.get_template('custom.html')
+	context = RequestContext(request, {
+		'questions': questions,
+		'skills': skills
+	})
+	return HttpResponse(template.render(context))
+
 """
 List of all students.
 [

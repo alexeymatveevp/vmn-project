@@ -1,0 +1,13 @@
+body {
+	margin: 0px;
+}
+
+p {
+	position: absolute;
+width: 200px;
+height: 50px;
+margin: 0px;
+padding: 0px;
+text-align: center;
+background-color: rgb(197, 210, 252);
+}

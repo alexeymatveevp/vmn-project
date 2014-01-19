@@ -19,7 +19,7 @@
     console.log(end)
     ctx.lineWidth = 2;
     ctx.fillStyle = ctx.strokeStyle = '#099';
-    arrow(ctx,{x: 346, y: 375} ,{x: 238, y: 410} ,10);
+    arrow(ctx,start, end,10);
 
     function arrow(ctx,p1,p2,size){
       ctx.save();
@@ -30,6 +30,7 @@
 
       // Rotate the context to point along the path
       var dx = p2.x-p1.x, dy=p2.y-p1.y, len=Math.sqrt(dx*dx+dy*dy);
+      //var dx = 5, dy=100, len=Math.sqrt(dx*dx+dy*dy);
       ctx.translate(p2.x,p2.y);
       ctx.rotate(Math.atan2(dy,dx));
 
