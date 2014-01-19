@@ -1,0 +1,14 @@
+{
+  "name": "sigma",
+  "homepage": "https://github.com/jacomyal/sigma.js",
+  "_release": "853bb69ad6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "853bb69ad67c0cc0d0981db78568840de5319eee"
+  },
+  "_source": "git://github.com/jacomyal/sigma.js.git",
+  "_target": "*",
+  "_originalSource": "sigma",
+  "_direct": true
+}

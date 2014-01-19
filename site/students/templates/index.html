@@ -1,17 +1,48 @@
 {% load staticfiles %}
 <html>
-  <head>
-  	<script src="{% static "jquery-1.9.1.min.js" %}"></script>
-    <script type="text/javascript" src="{% static "js-graph-it.js" %}"></script>
-    <script type="text/javascript" src="{% static "script.js" %}"></script>
-    <script type="text/javascript" src="{% static "tree_renderer.js" %}"></script>
-    <link rel="stylesheet" type="text/css" href="{% static "js-graph-it.css" %}">
-    <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
-  </head>
-  <body>
-  	<div class="canvas" id="mainCanvas" style="width: 100%; height: 100%; border: 1px solid black;">
-      <div id="skill_tree"></div>
-    </div>
-  </body>
-</html> 
+<head>
+  <script src="{% static "bower_components/jquery/jquery.min.js" %}"></script>
+  <script src="{% static "bower_components/sigma/build/sigma.concat.js" %}"></script>
+  <script type="text/javascript" src="{% static "js/js-graph-it.js" %}"></script>
+  <script type="text/javascript" src="{% static "js/script.js" %}"></script>
+  <script type="text/javascript" src="{% static "js/tree_renderer.js" %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static "js/js-graph-it.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "js/style.css" %}">
+</head>
+<body>
+  <div class="canvas" id="mainCanvas" style="width: 70%; height: 100%; border: 1px solid black;">
+    <div id="skill_tree"></div>
+  </div>
+  <div id="sigma_div" style="width: 70%; height: 100%; border: 1px solid black;">
+    
+  </div>
+  <script type="text/javascript">
+    $(function() {
+        var sigRoot = document.getElementById('sigma_div');
+            var sigInst = sigma.init(sigRoot).drawingProperties({
+              defaultLabelColor: '#ccc',
+              font: 'Arial',
+              edgeColor: '#ff0000',
+              defaultEdgeType: 'curve'
+            }).graphProperties({
+              minNodeSize: 1,
+              maxNodeSize: 10
+            });
+
+            sigInst.addNode('hello',{
+              label: 'Hello',
+              color: '#222222',
+              x: 100,
+              y: 10
+            }).addNode('world',{
+              label: 'World',
+              color: '#222222',
+              x: 200,
+              y: 10
+            }).addEdge('hello_world','hello','world').draw();
+    })
+    
+  </script>
+</body>
+</html>
 
