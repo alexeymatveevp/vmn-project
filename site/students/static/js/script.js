@@ -1,4 +1,5 @@
 $(function() {
+
     $.ajax({
         url: "skills",
     }).done(function(data) {
@@ -6,36 +7,32 @@ $(function() {
         for (i in skills) {
             var skill = skills[i]
             var p = $('<p></p>')
-            p.addClass('block')
             p.css('position', 'absolute')
             p.attr('id', skill.name)
-            p.addClass('draggable')
             p.html(skill.name)
             $('#skill_tree').append(p)
-
-            for (j in skill.parent) {
-                var parent = skill.parent[j]
-                var con = $('<div class="connector"></div>')
-                var img = $('<img src="/static/img/arrow.gif" class="connector-end"></img>')
-                // var label = $('<label class="source-label">start</label>')
-                con.append(img)
-                // con.append(label)
-                con.addClass(parent)
-                con.addClass(skill.name)
-                con.addClass("down_end")
-                $('#skill_tree').append(con)
-            }
-
         }
         makeTree(skills)
         renderTree()
-        initPageObjects()
+        renderArrows()
     });
-});
+
+})
 
 function renderTree() {
-    $('#skill_tree p.block').each(function() {
-        $(this).css('top', 10 + getLevel(this.id) * 50)
+    $('#skill_tree p').each(function() {
+        $(this).css('top', 10 + getLevel(this.id) * 180)
+        if (getNodesAtLevel(this.id) == 1) {
+            $(this).css('left', 200 + 800 / 2)
+        } else {
+            $(this).css('left', 200 + 800 / getNodesAtLevel(this.id) * getIndexOnLevel(this.id))
+        }
+        $(this).draggable({
+            drag: function(event, ui) {
+                //ui.position.left = x;
+                //ui.position.top = y;
+            }
+        });
     })
 
 }
@@ -47,6 +44,22 @@ function getLevel(nodeName) {
             if (tree[i][j] == nodeName) {
                 return i
             }
+        }
+    }
+}
+
+function getNodesAtLevel(nodeName) {
+    for (i in window.treeMap) {
+        if (window.treeMap[i].indexOf(nodeName) != -1) {
+            return window.treeMap[i].length
+        }
+    }
+}
+
+function getIndexOnLevel(nodeName) {
+    for (i in window.treeMap) {
+        if (window.treeMap[i].indexOf(nodeName) != -1) {
+            return window.treeMap[i].indexOf(nodeName)
         }
     }
 }

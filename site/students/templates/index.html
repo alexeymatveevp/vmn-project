@@ -2,16 +2,15 @@
 <html>
 <head>
   <script src="{% static "bower_components/jquery/jquery.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "js/js-graph-it.js" %}"></script>
+  <script src="{% static "bower_components/jquery-ui/ui/jquery-ui.js" %}"></script>
   <script type="text/javascript" src="{% static "js/script.js" %}"></script>
+  <script type="text/javascript" src="{% static "js/arrow.js" %}"></script>
   <script type="text/javascript" src="{% static "js/tree_renderer.js" %}"></script>
-  <link rel="stylesheet" type="text/css" href="{% static "js/js-graph-it.css" %}">
-  <link rel="stylesheet" type="text/css" href="{% static "js/style.css" %}">
+  <link rel="stylesheet" type="text/css" href="{% static "js/custom.css" %}">
 </head>
 <body>
-  <div class="canvas" id="mainCanvas" style="width: 70%; height: 100%; border: 1px solid black;">
-    <div id="skill_tree"></div>
-  </div>
+	<div id="skill_tree"></div>
+  <canvas id="mainCanvas" width="800" height="600"></canvas>
 </body>
 </html>
 
