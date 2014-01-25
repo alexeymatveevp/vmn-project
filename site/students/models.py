@@ -18,6 +18,7 @@ class Question(models.Model):
 class Skill(models.Model):
     name = models.CharField(max_length=40, primary_key=True)
     desc = models.CharField(max_length=400)
+    img = models.CharField(max_length=400)
     class Meta:
     	db_table = 'skill'
     def __unicode__(self):

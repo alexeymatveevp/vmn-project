@@ -63,7 +63,7 @@ def student_descr(request, name):
 
 	output['skills'] = skills
 	output['questions'] = questions
-	return HttpResponse(json.dumps(output))
+	return HttpResponse(json.dumps(output), content_type="application/json")
 
 """
 List of all skills with parent-child relationship.
@@ -102,7 +102,17 @@ def skills(request):
 		for child in SkillsRelationship.objects.filter(parent=skillName):
 			skill['child'].append(child.child.name)
 		output.append(skill)
-	return HttpResponse(json.dumps(output))
+	return HttpResponse(json.dumps(output), content_type="application/json")
+
+def skills_page(request):
+	skills = []
+	for row in Skill.objects.all():
+		skills.append(row.name)
+	template = loader.get_template('skills.html')
+	context = RequestContext(request, {
+		'skills': skills
+	})
+	return HttpResponse(template.render(context))
 
 """
 Description of skill.
@@ -135,7 +145,20 @@ def skill_descr(request, name):
 	output['child'] = child
 	output['parent'] = parent
 	output['questions'] = questions
-	return HttpResponse(json.dumps(output))
+	return HttpResponse(json.dumps(output), content_type="application/json")
+
+def skill_page(request, name):
+	questions = []
+	skill = Skill.objects.get(name=name)
+	print skill.desc
+	for row in SkillQuestion.objects.filter(skill=Skill(name)):
+		questions.append(row.question)
+	template = loader.get_template('skill.html')
+	context = RequestContext(request, {
+		'skill': skill,
+		'questions': questions
+	})
+	return HttpResponse(template.render(context))
 
 """
 List of all questions.
@@ -154,7 +177,17 @@ def questions(request):
 	output = []
 	for q in Question.objects.all():
 		output.append(q.question)
-	return HttpResponse(json.dumps(output))
+	return HttpResponse(json.dumps(output), content_type="application/json")
+
+def questions_page(request):
+	output = []
+	for q in Question.objects.all():
+		output.append(q.question)
+	template = loader.get_template('questions.html')
+	context = RequestContext(request, {
+		'questions': output
+	})
+	return HttpResponse(template.render(context))
 
 """
 Description of a question. Currently a list of assosiated skills.

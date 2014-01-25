@@ -1,26 +1,63 @@
 $(function() {
-
     $.ajax({
-        url: "skills",
+        url: "skills.json",
     }).done(function(data) {
-        var skills = eval(data)
+        var skills = data
         for (i in skills) {
             var skill = skills[i]
-            var p = $('<p></p>')
-            p.css('position', 'absolute')
-            p.attr('id', skill.name)
-            p.html(skill.name)
-            $('#skill_tree').append(p)
+            var skillNode = $('<div class="alert alert-info skill-block"><a href="#" class="alert-link"></a></div>')
+            var skillLink = $('<a href="/skill/' + skill.name + '" class="alert-link"></a>')
+            skillNode.attr('id', skill.name)
+            skillLink.html(skill.name)
+            skillNode.html(skillLink)
+            $('#skill_tree').append(skillNode)
         }
+        // $("#mainCanvas").width($('#skill_tree').width())
+        $("#mainCanvas").css('top',$('#breadcrumbs').height())
         makeTree(skills)
         renderTree()
         renderArrows()
-    });
+    })
 
+    $('#studentVika').click(function() {
+        $(this).parent().parent().find('li').removeClass('active')
+        $(this).parent().addClass('active')
+        toogleStudentProgress('Vika')
+    })
+    $('#studentMarina').click(function() {
+        $(this).parent().parent().find('li').removeClass('active')
+        $(this).parent().addClass('active')
+        toogleStudentProgress('Marina')
+    })
+    $('#studentNatasha').click(function() {
+        $(this).parent().parent().find('li').removeClass('active')
+        $(this).parent().addClass('active')
+        toogleStudentProgress('Natasha')
+    })
 })
 
+function toogleStudentProgress(studentName) {
+    $.ajax({
+        url: "student/" + studentName,
+    }).done(function(data) {
+        console.log(data)
+        var learnedSkills = data.skills
+        for (node in nodeMap) {
+            $('#'+node).removeClass('alert-success')
+            $('#'+node).addClass('alert-info')
+            for (ind in learnedSkills) {
+                if (node == learnedSkills[ind]) {
+                    $('#'+node).removeClass('alert-info')
+                    $('#'+node).addClass('alert-success')
+                    console.log(node)
+                }
+            }
+        }
+    })   
+}
+
 function renderTree() {
-    $('#skill_tree p').each(function() {
+    $('#skill_tree div').each(function() {
         $(this).css('top', 10 + getLevel(this.id) * 180)
         if (getNodesAtLevel(this.id) == 1) {
             $(this).css('left', 200 + 800 / 2)
