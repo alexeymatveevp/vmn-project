@@ -149,14 +149,17 @@ def skill_descr(request, name):
 
 def skill_page(request, name):
 	questions = []
+	links = []
 	skill = Skill.objects.get(name=name)
-	print skill.desc
+	for row in Link.objects.filter(skill=Skill(name)):
+		links.append(row.link)
 	for row in SkillQuestion.objects.filter(skill=Skill(name)):
 		questions.append(row.question)
 	template = loader.get_template('skill.html')
 	context = RequestContext(request, {
 		'skill': skill,
-		'questions': questions
+		'questions': questions,
+		'links': links
 	})
 	return HttpResponse(template.render(context))
 
