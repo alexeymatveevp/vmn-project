@@ -22,7 +22,11 @@ $(function() {
 function toogleStudentQuestionsProgress(studentName) {
 	$.ajax({
         url: "student/" + studentName + ".json",
+        beforeSend: function() {
+            $('#progress_bar').show()
+        }
     }).done(function(data) {
+    	$('#progress_bar').hide()
         $('#questions li').each(function() {
         	$(this).removeClass('alert-success')
         	$(this).addClass('alert-info')

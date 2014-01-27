@@ -42,8 +42,11 @@ $(function() {
 function toogleStudentProgress(studentName) {
     $.ajax({
         url: "student/" + studentName,
+        beforeSend: function() {
+            $('#progress_bar').show()
+        }
     }).done(function(data) {
-        console.log(data)
+        $('#progress_bar').hide()
         var learnedSkills = data.skills
         for (node in nodeMap) {
             $('#'+node).removeClass('alert-success')
