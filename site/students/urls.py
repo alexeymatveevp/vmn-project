@@ -4,7 +4,6 @@ from students import views
 
 urlpatterns = patterns('',
 	url(r'^$', views.index, name='index'),
-	url(r'^custom$', views.custom, name='custom'),
     url(r'^students$', views.students, name='students'),
     url(r'^student/(?P<name>[a-zA-Z]+)', views.student_descr, name='student_descr'),
     url(r'^skills.json', views.skills, name='skills'),
@@ -13,5 +12,6 @@ urlpatterns = patterns('',
     url(r'^skill/(?P<name>[a-zA-Z_-]+)', views.skill_page, name='skill_page'),
     url(r'^questions.json', views.questions, name='questions'),
     url(r'^questions', views.questions_page, name='questions_page'),
-    url(r'^question/(?P<id>\d+)', views.question_descr, name='question_descr')
+    url(r'^question/(?P<id>\d+)', views.question_descr, name='question_descr'),
+    url(r'^roadmap$', views.roadmap_page, name='roadmap_page')
 )

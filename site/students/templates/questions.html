@@ -2,6 +2,7 @@
 <html>
 <head>
 	{% include "head.html" %}
+	<script type="text/javascript" src="{% static "js/questions.js" %}"></script>
 </head>
 <body>
 {% include "navbar.html" with questions_page="true" %}
@@ -13,10 +14,10 @@
 </div>
 <div class="row centered">
 	<div class="col-md-8">
-		<ul>
+		<ul id="questions">
 			{% for q in questions %}
-			<li class="space-7">
-				{{ q }}
+			<li id="{{ q.id }}"class="space-7">
+				{{ q.question }}
 			</li>
 			{% endfor %}
 		</ul>

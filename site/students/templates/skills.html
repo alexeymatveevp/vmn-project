@@ -1,6 +1,7 @@
 {% load staticfiles %}
 <head>
 	{% include "head.html" %}
+	<script type="text/javascript" src="{% static "js/skills.js" %}"></script>
 </head>
 <body>
 {% include "navbar.html" with skills_page="true" %}
@@ -12,10 +13,10 @@
 </div>
 <div class="row centered">
 	<div class="col-md-8">	
-		<ul>
+		<ul id="skills">
 			{% for s in skills %}
 			<li class="space-7">
-				<a class="alert-link" href="/skill/{{ s }}">{{ s }}</a>
+				<a id="{{ s }}" class="alert-link" href="/skill/{{ s }}">{{ s }}</a>
 			</li>
 			{% endfor %}
 		</ul>

@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<html>
+<head>
+	{% include "head.html" %}
+</head>
+<body>
+{% include "navbar.html" with roadmap_page="true" %}
+<div id="breadcrumbs" class="row">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-part"><a href="/">Home</a></li>
+		<li class="active breadcrumb-part">Roadmap</li>
+	</ol>
+</div>
+<div class="row centered">
+	<p class="lead">
+		Here is a roadmap of ongoing updates
+	</p>
+	<div class="col-md-4">
+		<img src="{% static "roadmap.png" %}"/>
+	</div>
+</div>
+</body>
+</html>

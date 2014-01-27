@@ -15,16 +15,6 @@ def index(request):
 	})
 	return HttpResponse(template.render(context))
 
-def custom(request):
-	questions = [row.question for row in Question.objects.all()]
-	skills = [row.name for row in Skill.objects.all()]
-	template = loader.get_template('custom.html')
-	context = RequestContext(request, {
-		'questions': questions,
-		'skills': skills
-	})
-	return HttpResponse(template.render(context))
-
 """
 List of all students.
 [
@@ -53,14 +43,9 @@ def student_descr(request, name):
 	output = dict()
 	skills = []
 	questions = []
-	questionIDs = []
 	for row in QuestionsAnswered.objects.filter(student=name):
-		questionIDs.append(row.question.id)
-		questionText = Question.objects.get(pk=row.question.id).question
-		questions.append(questionText)
-	print questionIDs, name
-	skills = get_skills_for_questions(questionIDs)
-
+		questions.append(row.question.id)
+	skills = get_skills_for_questions(questions)
 	output['skills'] = skills
 	output['questions'] = questions
 	return HttpResponse(json.dumps(output), content_type="application/json")
@@ -179,17 +164,28 @@ List of all questions.
 def questions(request):
 	output = []
 	for q in Question.objects.all():
-		output.append(q.question)
+		item = dict()
+		item['question'] = q.question
+		item['id'] = q.id
+		output.append(item)
 	return HttpResponse(json.dumps(output), content_type="application/json")
 
 def questions_page(request):
 	output = []
 	for q in Question.objects.all():
-		output.append(q.question)
+		item = dict()
+		item['question'] = q.question
+		item['id'] = q.id
+		output.append(item)
 	template = loader.get_template('questions.html')
 	context = RequestContext(request, {
 		'questions': output
 	})
+	return HttpResponse(template.render(context))
+
+def roadmap_page(request):
+	template = loader.get_template('roadmap.html')
+	context = RequestContext(request)
 	return HttpResponse(template.render(context))
 
 """
@@ -244,3 +240,4 @@ def get_questions_for_skill(skill):
 		if skill == row.skill.name:
 			result.append(row.question.question)
 	return result
+
