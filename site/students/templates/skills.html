@@ -1,31 +1,33 @@
 {% load staticfiles %}
-<html>
 <head>
-  <script src="{% static "bower_components/jquery/jquery.min.js" %}"></script>
-  <script type="text/javascript" src="{% static "js/script.js" %}"></script>
-  <link rel="stylesheet" type="text/css" href="{% static "js/style.css" %}">
-  <link rel="stylesheet" type="text/css" href="{% static "bower_components/bootstrap/dist/css/bootstrap.css" %}">
+	{% include "head.html" %}
 </head>
 <body>
-	<div id="breadcrumbs" class="row">
-		<ol class="breadcrumb">
-		  <li class="breadcrumb-part"><a href="/">Home</a></li>
-		  <li class="active breadcrumb-part">Skills</li>
-		</ol>
+{% include "navbar.html" with skills_page="true" %}
+<div id="breadcrumbs" class="row">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-part"><a href="/">Home</a></li>
+		<li class="active breadcrumb-part">Skills</li>
+	</ol>
+</div>
+<div class="row centered">
+	<div class="col-md-8">	
+		<ul>
+			{% for s in skills %}
+			<li class="space-7">
+				<a class="alert-link" href="/skill/{{ s }}">{{ s }}</a>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<ul>
-				{% for s in skills %}
-				<li>
-					<a class="alert-link" href="/skill/{{ s }}">{{ s }}</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</div>
-		<div class="col-md-8">
-		</div>
+	<div class="col-md-4">
+		<h2>Participants</h2>
+		<ul id="peoplePills"class="nav nav-pills nav-stacked">
+			<li><a id="studentVika" href="#">Вика</a></li>
+			<li><a id="studentMarina" href="#">Марина</a></li>
+			<li><a id="studentNatasha" href="#">Наташа</a></li>
+		</ul>
 	</div>
-	
+</div>
 </body>
 </html>

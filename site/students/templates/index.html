@@ -1,45 +1,31 @@
 {% load staticfiles %}
 <html>
 <head>
-	<script src="{% static "bower_components/jquery/jquery.min.js" %}"></script>
-	<script src="{% static "bower_components/jquery-ui/ui/jquery-ui.js" %}"></script>
-	<script src="{% static "bower_components/bootstrap/dist/js/bootstrap.js" %}"></script>
+	{% include "head.html" %}
 	<script type="text/javascript" src="{% static "js/script.js" %}"></script>
 	<script type="text/javascript" src="{% static "js/arrow.js" %}"></script>
 	<script type="text/javascript" src="{% static "js/tree_renderer.js" %}"></script>
-	<link rel="stylesheet" type="text/css" href="{% static "js/style.css" %}">
-	<link rel="stylesheet" type="text/css" href="{% static "bower_components/bootstrap/dist/css/bootstrap.css" %}">
 </head>
 <body>
-	<div id="breadcrumbs" class="row">
-		<ol class="breadcrumb">
-			<li class="active breadcrumb-part">
-				<div class="dropdown">
-					<a hfer="#" data-toggle="dropdown">Home</a>
-					<ul class="dropdown-menu" >
-						<li><a href="/skills">Skills</a></li>
-						<li><a href="/questions">Questions</a></li>
-						<li class="divider"></li>
-					</ul>
-				</div>
-			</li>
-		</ol>
+{% include "navbar.html" %}
+<div id="breadcrumbs" class="row">
+	<ol class="breadcrumb">
+		<li class="active breadcrumb-part">Home</li>
+	</ol>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<div id="skill_tree"></div>
+		<canvas id="mainCanvas" width="1000px" height="2000px"></canvas>
 	</div>
-	<div class="row">
-		<div class="col-md-8">
-			<div id="skill_tree"></div>
-			<canvas id="mainCanvas" width="1000px" height="2000px"></canvas>
-		</div>
-		<div class="col-md-4">
-			<h2>Participants</h2>
-			<ul id="peoplePills"class="nav nav-pills nav-stacked">
-				<li><a id="studentVika" href="#">Вика</a></li>
-				<li><a id="studentMarina" href="#">Марина</a></li>
-				<li><a id="studentNatasha" href="#">Наташа</a></li>
-			</ul>
-		</div>
+	<div class="col-md-4">
+		<h2>Participants</h2>
+		<ul id="peoplePills"class="nav nav-pills nav-stacked">
+			<li><a id="studentVika" href="#">Вика</a></li>
+			<li><a id="studentMarina" href="#">Марина</a></li>
+			<li><a id="studentNatasha" href="#">Наташа</a></li>
+		</ul>
 	</div>
-	
+</div>
 </body>
 </html>
-

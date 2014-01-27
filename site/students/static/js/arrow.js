@@ -1,4 +1,4 @@
-var TOP_OFFSET = -76
+var TOP_OFFSET = -76-56
 
 function renderArrows() {
     var ctx = document.getElementById('mainCanvas').getContext('2d');

@@ -19,3 +19,13 @@
 .skill-block {
 	position: absolute;
 }
+nav.navbar {
+	margin: 0px;
+}
+div.row.centered {
+	width: 90%;
+	margin: auto;
+}
+.space-7 {
+	margin: 7px;
+}

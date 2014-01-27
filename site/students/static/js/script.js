@@ -23,16 +23,19 @@ $(function() {
         $(this).parent().parent().find('li').removeClass('active')
         $(this).parent().addClass('active')
         toogleStudentProgress('Vika')
+        return false
     })
     $('#studentMarina').click(function() {
         $(this).parent().parent().find('li').removeClass('active')
         $(this).parent().addClass('active')
         toogleStudentProgress('Marina')
+        return false
     })
     $('#studentNatasha').click(function() {
         $(this).parent().parent().find('li').removeClass('active')
         $(this).parent().addClass('active')
         toogleStudentProgress('Natasha')
+        return false
     })
 })
 
@@ -64,12 +67,6 @@ function renderTree() {
         } else {
             $(this).css('left', 200 + 800 / getNodesAtLevel(this.id) * getIndexOnLevel(this.id))
         }
-        $(this).draggable({
-            drag: function(event, ui) {
-                //ui.position.left = x;
-                //ui.position.top = y;
-            }
-        });
     })
 
 }
