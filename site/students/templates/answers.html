@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<html>
+<head>
+    <script src="{% static "bower_components/jquery/jquery.min.js" %}"></script>
+    <script src="{% static "bower_components/multiselect/jquery.multi-select.js" %}"></script>
+    <script src="{% static "bower_components/jquery-cookie/jquery.cookie.js" %}"></script>
+    <script src="{% static "js/cross-origin.js" %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static "bower_components/multiselect/multi-select.css" %}" >
+</head>
+<body>
+
+<div class="row centered">
+    {% csrf_token %}
+    <select multiple="multiple" id="questions" name="questions[]" style="width: 100%; height: 400px">
+    {% for q in questions %}
+        <option id="{{ q.id }}" value="{{ q.id }}">{{ q.question }}</option>
+    {% endfor %}
+    </select>
+    <ul style="list-style-type: none;">
+        <li><input type="radio" name="student" value="Vika">Vika</li>
+        <li><input type="radio" name="student" value="Marina"/>Marina</li>
+        <li><input type="radio" name="student" value="Natasha"/>Natasha</li>
+    </ul>
+    <button id="send" type="button">Send</button>
+</div>
+<script>
+    $(function() {
+        $('#questions').multiSelect()
+        $('#send').click(function() {
+            var selectedList = ""
+            $('#questions :selected').each(function(i, selected) {
+                selectedList = selectedList+selected.id+','
+            })
+            console.log(selectedList)
+            if (selectedList && $('input[name=student]:checked').length) {
+                // delete last comma
+                selectedList = selectedList.substr(0,selectedList.length-1)
+                $.ajax({
+                    type: 'POST',
+                    url: '/answered/'+$('input[name=student]:checked').val(),
+                    data: 'questions='+selectedList,
+                    success: function() {
+                        alert('success')
+                    }
+                })
+            }
+        })
+    })
+</script>
+</body>
+</html>

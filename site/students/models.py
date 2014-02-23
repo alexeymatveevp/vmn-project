@@ -7,11 +7,26 @@ class Student(models.Model):
     def __unicode__(self):
         return self.name
 
+class Milestone(models.Model):
+    name = models.CharField(max_length=40, primary_key=True)
+    date = models.DateField(auto_now=False, auto_now_add=False, auto_created=False)
+
+    class Meta:
+        db_table = 'milestone'
+
+    def __unicode__(self):
+        return self.name
+
+
+
 class Question(models.Model):
     id = models.AutoField(primary_key=True)
     question = models.CharField(max_length=200)
+    milestone = models.ForeignKey(Milestone, db_column="milestone")
+
     class Meta:
         db_table = 'question'
+
     def __unicode__(self):
         return self.question
 

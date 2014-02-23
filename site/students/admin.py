@@ -1,25 +1,34 @@
 from django.contrib import admin
 from students.models import *
 
-# Register your models here.
+
+class MilestoneAdmin(admin.ModelAdmin):
+    list_display = ['name', 'date']
+
 
 class SkillAdmin(admin.ModelAdmin):
-	list_display = ['name', 'desc']
+    list_display = ['name', 'desc']
+
 
 class QuestionAnsweredAdmin(admin.ModelAdmin):
-	list_display = ['student', 'question']
+    list_display = ['student', 'question']
+
 
 class SkillsRelationshipAdmin(admin.ModelAdmin):
-	list_display = ['parent', 'child']
+    list_display = ['parent', 'child']
+
 
 class SkillQuestionAdmin(admin.ModelAdmin):
-	list_display = ['skill', 'question']
+    list_display = ['skill', 'question']
+
 
 class LinkAdmin(admin.ModelAdmin):
-	list_display = ['skill', 'link']
+    list_display = ['skill', 'link']
+
 
 admin.site.register(Student)
-admin.site.register(Skill,SkillAdmin)
+admin.site.register(Skill, SkillAdmin)
+admin.site.register(Milestone, MilestoneAdmin)
 admin.site.register(Question)
 admin.site.register(Link, LinkAdmin)
 admin.site.register(SkillQuestion, SkillQuestionAdmin)
