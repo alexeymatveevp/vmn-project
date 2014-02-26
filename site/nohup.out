@@ -163,3 +163,294 @@ CommandError: "0.0.0.0" is not a valid port number or address:port pair.
 [24/Feb/2014 01:45:55] "POST /admin/students/skillquestion/ HTTP/1.1" 302 0
 [24/Feb/2014 01:45:55] "GET /admin/students/skillquestion/ HTTP/1.1" 200 14698
 [24/Feb/2014 01:45:55] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[24/Feb/2014 13:31:27] "GET /questions HTTP/1.1" 200 7857
+[24/Feb/2014 13:31:27] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 304 0
+[24/Feb/2014 13:31:27] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 304 0
+[24/Feb/2014 13:31:27] "GET /static/js/style.css HTTP/1.1" 304 0
+[24/Feb/2014 13:31:27] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 304 0
+[24/Feb/2014 13:31:27] "GET /static/js/questions.js HTTP/1.1" 304 0
+[24/Feb/2014 13:31:28] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 304 0
+[24/Feb/2014 13:31:41] "GET /student/Natasha.json HTTP/1.1" 200 92
+[24/Feb/2014 13:31:51] "GET /student/Marina.json HTTP/1.1" 200 92
+[24/Feb/2014 13:31:54] "GET /student/Vika.json HTTP/1.1" 200 31
+[24/Feb/2014 13:32:00] "GET /roadmap HTTP/1.1" 200 1269
+[24/Feb/2014 13:32:01] "GET /static/roadmap.png HTTP/1.1" 200 74188
+[24/Feb/2014 13:32:07] "GET /skills HTTP/1.1" 200 2746
+[24/Feb/2014 13:32:07] "GET /static/js/skills.js HTTP/1.1" 200 1304
+[24/Feb/2014 13:32:14] "GET /skill/binary_math HTTP/1.1" 200 2428
+[24/Feb/2014 13:33:26] "GET / HTTP/1.1" 200 2170
+[24/Feb/2014 13:33:26] "GET / HTTP/1.1" 200 2170
+[24/Feb/2014 13:33:26] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[24/Feb/2014 13:33:26] "GET /static/js/script.js HTTP/1.1" 200 3093
+[24/Feb/2014 13:33:26] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[24/Feb/2014 13:33:26] "GET /static/js/style.css HTTP/1.1" 200 370
+[24/Feb/2014 13:33:27] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[24/Feb/2014 13:33:27] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[24/Feb/2014 13:33:27] "GET /skills.json HTTP/1.1" 200 387
+[24/Feb/2014 13:33:27] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[24/Feb/2014 13:33:28] "GET /skills.json HTTP/1.1" 200 387
+[24/Feb/2014 13:33:28] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[24/Feb/2014 13:33:33] "GET /skill/binary_math HTTP/1.1" 200 2428
+[24/Feb/2014 13:33:33] "GET /skill/binary_math HTTP/1.1" 200 2428
+[24/Feb/2014 13:33:33] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 304 0
+[24/Feb/2014 13:33:52] "GET /questions HTTP/1.1" 200 7857
+[24/Feb/2014 13:33:52] "GET /questions HTTP/1.1" 200 7857
+[24/Feb/2014 13:33:52] "GET /static/js/questions.js HTTP/1.1" 200 1385
+[24/Feb/2014 13:33:52] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 304 0
+[24/Feb/2014 13:33:56] "GET /student/Marina.json HTTP/1.1" 200 92
+[24/Feb/2014 13:33:57] "GET /student/Marina.json HTTP/1.1" 200 92
+[24/Feb/2014 13:35:36] "GET / HTTP/1.1" 200 2170
+[24/Feb/2014 13:35:36] "GET /static/js/script.js HTTP/1.1" 200 3093
+[24/Feb/2014 13:35:36] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[24/Feb/2014 13:35:36] "GET /static/js/style.css HTTP/1.1" 200 370
+[24/Feb/2014 13:35:36] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[24/Feb/2014 13:35:36] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[24/Feb/2014 13:35:36] "GET /skills.json HTTP/1.1" 200 387
+[24/Feb/2014 13:35:36] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[24/Feb/2014 13:35:37] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[24/Feb/2014 13:35:37] "GET /questions HTTP/1.1" 200 7857
+[24/Feb/2014 13:35:37] "GET /static/js/questions.js HTTP/1.1" 200 1385
+[24/Feb/2014 14:24:23] "GET / HTTP/1.1" 200 2170
+[24/Feb/2014 14:24:24] "GET / HTTP/1.1" 200 2170
+[24/Feb/2014 14:24:24] "GET /static/js/script.js HTTP/1.1" 200 3093
+[24/Feb/2014 14:24:24] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[24/Feb/2014 14:24:24] "GET /static/js/style.css HTTP/1.1" 200 370
+[24/Feb/2014 14:24:24] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[24/Feb/2014 14:24:24] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[24/Feb/2014 14:24:24] "GET /skills.json HTTP/1.1" 200 387
+[24/Feb/2014 14:24:24] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[24/Feb/2014 14:24:24] "GET /skills.json HTTP/1.1" 200 387
+[24/Feb/2014 14:24:24] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[24/Feb/2014 16:29:55] "GET /questions HTTP/1.1" 200 7857
+[24/Feb/2014 16:29:55] "GET /static/js/style.css HTTP/1.1" 200 370
+[24/Feb/2014 16:29:55] "GET /static/js/questions.js HTTP/1.1" 200 1385
+[24/Feb/2014 16:29:55] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[24/Feb/2014 16:29:55] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[24/Feb/2014 16:29:55] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[24/Feb/2014 16:29:55] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[24/Feb/2014 16:30:37] "GET /student/Marina.json HTTP/1.1" 200 92
+[24/Feb/2014 16:30:41] "GET /student/Vika.json HTTP/1.1" 200 31
+[24/Feb/2014 16:30:43] "GET /student/Natasha.json HTTP/1.1" 200 92
+[24/Feb/2014 16:30:45] "GET /student/Marina.json HTTP/1.1" 200 92
+[24/Feb/2014 16:34:00] "GET /skills HTTP/1.1" 200 2746
+[24/Feb/2014 16:34:00] "GET /static/js/skills.js HTTP/1.1" 200 1304
+[24/Feb/2014 16:34:02] "GET /roadmap HTTP/1.1" 200 1269
+[24/Feb/2014 16:34:02] "GET /static/roadmap.png HTTP/1.1" 200 74188
+[24/Feb/2014 16:34:09] "GET /questions HTTP/1.1" 200 7857
+[24/Feb/2014 16:34:11] "GET /skills HTTP/1.1" 200 2746
+[24/Feb/2014 16:34:15] "GET /skill/computer_logic HTTP/1.1" 200 3929
+[24/Feb/2014 17:17:27] "GET / HTTP/1.1" 200 2170
+[24/Feb/2014 17:17:27] "GET /skills.json HTTP/1.1" 200 387
+[24/Feb/2014 17:17:28] "GET /questions HTTP/1.1" 200 7857
+[24/Feb/2014 17:17:31] "GET /student/Marina.json HTTP/1.1" 200 92
+[24/Feb/2014 17:18:27] "GET /skills HTTP/1.1" 200 2746
+[24/Feb/2014 17:18:27] "GET /skills HTTP/1.1" 200 2746
+[24/Feb/2014 17:18:27] "GET /static/js/skills.js HTTP/1.1" 200 1304
+[24/Feb/2014 17:18:29] "GET / HTTP/1.1" 200 2170
+[24/Feb/2014 17:18:29] "GET /skills.json HTTP/1.1" 200 387
+[25/Feb/2014 01:23:11] "GET /admin HTTP/1.1" 301 0
+[25/Feb/2014 01:23:11] "GET /admin/ HTTP/1.1" 200 1865
+[25/Feb/2014 01:23:19] "POST /admin/ HTTP/1.1" 302 0
+[25/Feb/2014 01:23:19] "GET /admin/ HTTP/1.1" 200 9957
+[25/Feb/2014 01:23:19] "GET / HTTP/1.1" 200 2170
+[25/Feb/2014 01:23:20] "GET /skills.json HTTP/1.1" 200 387
+[25/Feb/2014 01:23:22] "GET /questions HTTP/1.1" 200 7857
+[25/Feb/2014 01:25:18] "GET /admin/students/question/ HTTP/1.1" 200 13027
+[25/Feb/2014 01:25:18] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[25/Feb/2014 01:25:24] "GET /admin/students/question/add/ HTTP/1.1" 200 4104
+[25/Feb/2014 01:25:24] "GET /admin/jsi18n/ HTTP/1.1" 200 2372
+[25/Feb/2014 16:55:39] "GET / HTTP/1.1" 200 2170
+[25/Feb/2014 16:55:39] "GET /static/js/style.css HTTP/1.1" 200 370
+[25/Feb/2014 16:55:39] "GET /static/js/script.js HTTP/1.1" 200 3093
+[25/Feb/2014 16:55:39] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[25/Feb/2014 16:55:39] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[25/Feb/2014 16:55:39] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[25/Feb/2014 16:55:39] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[25/Feb/2014 16:55:40] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[25/Feb/2014 16:55:41] "GET /skills.json HTTP/1.1" 200 387
+[25/Feb/2014 16:55:41] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[25/Feb/2014 16:55:43] "GET /questions HTTP/1.1" 200 7857
+[25/Feb/2014 16:55:43] "GET /static/js/questions.js HTTP/1.1" 200 1385
+[25/Feb/2014 16:55:45] "GET /skills HTTP/1.1" 200 2746
+[25/Feb/2014 16:55:45] "GET /static/js/skills.js HTTP/1.1" 200 1304
+[25/Feb/2014 19:52:42] "GET /skills HTTP/1.1" 200 2746
+[25/Feb/2014 19:52:48] "GET /questions HTTP/1.1" 200 7857
+[25/Feb/2014 19:52:48] "GET /questions HTTP/1.1" 200 7857
+[25/Feb/2014 19:52:49] "GET /static/js/questions.js HTTP/1.1" 304 0
+[25/Feb/2014 19:52:59] "GET /student/Natasha.json HTTP/1.1" 200 92
+[25/Feb/2014 20:07:28] "GET /roadmap HTTP/1.1" 200 1269
+[26/Feb/2014 10:43:41] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 10:43:41] "GET /static/js/style.css HTTP/1.1" 200 370
+[26/Feb/2014 10:43:41] "GET /static/js/script.js HTTP/1.1" 200 3093
+[26/Feb/2014 10:43:41] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[26/Feb/2014 10:43:41] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[26/Feb/2014 10:43:41] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[26/Feb/2014 10:43:42] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[26/Feb/2014 10:43:42] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[26/Feb/2014 10:43:42] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 10:43:42] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[26/Feb/2014 10:43:57] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 10:43:57] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 10:44:30] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 10:44:30] "GET /static/js/style.css HTTP/1.1" 200 370
+[26/Feb/2014 10:44:30] "GET /static/js/script.js HTTP/1.1" 200 3093
+[26/Feb/2014 10:44:30] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[26/Feb/2014 10:44:30] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[26/Feb/2014 10:44:31] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[26/Feb/2014 10:44:31] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[26/Feb/2014 10:44:31] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[26/Feb/2014 10:44:31] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 10:44:31] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[26/Feb/2014 10:44:51] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 10:44:51] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 10:45:02] "GET /answered HTTP/1.1" 404 4346
+[26/Feb/2014 10:45:16] "GET /answered/Vika HTTP/1.1" 200 18
+[26/Feb/2014 10:45:20] "GET /answered HTTP/1.1" 404 4346
+[26/Feb/2014 10:45:24] "GET /answers HTTP/1.1" 200 7535
+[26/Feb/2014 10:45:24] "GET /static/bower_components/jquery-cookie/jquery.cookie.js HTTP/1.1" 200 3095
+[26/Feb/2014 10:45:24] "GET /static/bower_components/multiselect/multi-select.css HTTP/1.1" 200 2232
+[26/Feb/2014 10:45:24] "GET /static/js/cross-origin.js HTTP/1.1" 200 1311
+[26/Feb/2014 10:45:24] "GET /static/bower_components/multiselect/jquery.multi-select.js HTTP/1.1" 200 19221
+[26/Feb/2014 10:45:24] "GET /static/bower_components/multiselect/switch.png HTTP/1.1" 200 3080
+[26/Feb/2014 16:37:32] "GET /student/Natasha.json HTTP/1.1" 200 92
+[26/Feb/2014 16:45:06] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 16:45:07] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 16:45:07] "GET /static/js/style.css HTTP/1.1" 200 370
+[26/Feb/2014 16:45:07] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[26/Feb/2014 16:45:07] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[26/Feb/2014 16:45:07] "GET /static/js/script.js HTTP/1.1" 200 3093
+[26/Feb/2014 16:45:07] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[26/Feb/2014 16:45:07] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[26/Feb/2014 16:45:07] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[26/Feb/2014 16:45:08] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 16:45:08] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 16:45:14] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[26/Feb/2014 16:45:14] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[26/Feb/2014 16:45:46] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 16:45:47] "GET /static/js/style.css HTTP/1.1" 200 370
+[26/Feb/2014 16:45:47] "GET /static/js/script.js HTTP/1.1" 200 3093
+[26/Feb/2014 16:45:47] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[26/Feb/2014 16:45:47] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[26/Feb/2014 16:45:48] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[26/Feb/2014 16:45:48] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[26/Feb/2014 16:45:49] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[26/Feb/2014 16:45:49] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 16:45:50] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[26/Feb/2014 16:46:02] "GET /questions HTTP/1.1" 200 7857
+[26/Feb/2014 16:46:03] "GET /static/js/questions.js HTTP/1.1" 200 1385
+[26/Feb/2014 16:46:17] "GET /student/Natasha.json HTTP/1.1" 200 92
+[26/Feb/2014 16:46:29] "GET /answer HTTP/1.1" 404 4336
+[26/Feb/2014 16:46:41] "GET /answers HTTP/1.1" 200 7535
+[26/Feb/2014 16:46:42] "GET /static/bower_components/multiselect/multi-select.css HTTP/1.1" 200 2232
+[26/Feb/2014 16:46:42] "GET /static/bower_components/jquery-cookie/jquery.cookie.js HTTP/1.1" 200 3095
+[26/Feb/2014 16:46:42] "GET /static/js/cross-origin.js HTTP/1.1" 200 1311
+[26/Feb/2014 16:46:42] "GET /static/bower_components/multiselect/jquery.multi-select.js HTTP/1.1" 200 19221
+[26/Feb/2014 16:46:43] "GET /static/bower_components/multiselect/switch.png HTTP/1.1" 200 3080
+[26/Feb/2014 16:47:26] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 16:47:27] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 16:47:29] "GET /questions HTTP/1.1" 200 7857
+[26/Feb/2014 16:47:34] "GET /student/Natasha.json HTTP/1.1" 200 92
+[26/Feb/2014 17:21:34] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 17:21:34] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 17:21:37] "GET /questions HTTP/1.1" 200 7857
+[26/Feb/2014 17:21:37] "GET /static/js/questions.js HTTP/1.1" 304 0
+[26/Feb/2014 17:21:41] "GET /student/Marina.json HTTP/1.1" 200 92
+[26/Feb/2014 17:32:01] "GET /questions HTTP/1.1" 200 7857
+Validating models...
+
+0 errors found
+February 24, 2014 - 01:12:52
+Django version 1.6.1, using settings 'skill_tree.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+{u'OOP': [21], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [8, 9, 10]}
+{u'OOP': [21, 22, 23, 24, 25], u'binary_math': [19, 20], u'processor': [11, 12, 13, 14, 15, 16, 17, 18], u'computer_logic': [1, 2, 3, 4, 5, 6, 7], u'memory': [[26/Feb/2014 17:32:04] "GET /student/Marina.json HTTP/1.1" 200 92
+[26/Feb/2014 17:32:05] "GET /student/Natasha.json HTTP/1.1" 200 92
+[26/Feb/2014 21:22:08] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 21:22:09] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 304 0
+[26/Feb/2014 21:22:09] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 304 0
+[26/Feb/2014 21:22:09] "GET /static/js/style.css HTTP/1.1" 304 0
+[26/Feb/2014 21:22:09] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 304 0
+[26/Feb/2014 21:22:09] "GET /static/js/script.js HTTP/1.1" 304 0
+[26/Feb/2014 21:22:09] "GET /static/js/arrow.js HTTP/1.1" 304 0
+[26/Feb/2014 21:22:10] "GET /static/js/tree_renderer.js HTTP/1.1" 304 0
+[26/Feb/2014 21:22:12] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 304 0
+[26/Feb/2014 21:22:12] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 21:22:17] "GET /answers HTTP/1.1" 200 7535
+[26/Feb/2014 21:22:17] "GET /static/bower_components/jquery-cookie/jquery.cookie.js HTTP/1.1" 200 3095
+[26/Feb/2014 21:22:17] "GET /static/js/cross-origin.js HTTP/1.1" 200 1311
+[26/Feb/2014 21:22:17] "GET /static/bower_components/multiselect/jquery.multi-select.js HTTP/1.1" 200 19221
+[26/Feb/2014 21:22:17] "GET /static/bower_components/multiselect/multi-select.css HTTP/1.1" 200 2232
+[26/Feb/2014 21:22:20] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 200 83606
+[26/Feb/2014 21:22:20] "GET /static/bower_components/multiselect/switch.png HTTP/1.1" 200 3080
+[26/Feb/2014 21:22:23] "GET / HTTP/1.1" 200 2170
+[26/Feb/2014 21:22:23] "GET /static/js/style.css HTTP/1.1" 200 370
+[26/Feb/2014 21:22:23] "GET /static/js/script.js HTTP/1.1" 200 3093
+[26/Feb/2014 21:22:24] "GET /static/js/arrow.js HTTP/1.1" 200 3270
+[26/Feb/2014 21:22:24] "GET /static/js/tree_renderer.js HTTP/1.1" 200 1052
+[26/Feb/2014 21:22:24] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 200 58533
+[26/Feb/2014 21:22:25] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 200 122848
+[26/Feb/2014 21:22:25] "GET /skills.json HTTP/1.1" 200 387
+[26/Feb/2014 21:22:26] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[26/Feb/2014 21:22:27] "GET /skills HTTP/1.1" 200 2746
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/wsgiref/handlers.py", line 94, in run
+    self.finish_response()
+  File "/usr/lib/python2.6/wsgiref/handlers.py", line 135, in finish_response
+    self.write(data)
+  File "/usr/lib/python2.6/wsgiref/handlers.py", line 223, in write
+    self._write(data)
+  File "/usr/lib/python2.6/socket.py", line 318, in write
+    self.flush()
+  File "/usr/lib/python2.6/socket.py", line 297, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/usr/lib/python2.6/SocketServer.py", line 560, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.6/SocketServer.py", line 322, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.6/dist-packages/django/core/servers/basehttp.py", line 126, in __init__
+    super(WSGIRequestHandler, self).__init__(*args, **kwargs)
+  File "/usr/lib/python2.6/SocketServer.py", line 618, in __init__
+    self.finish()
+  File "/usr/lib/python2.6/SocketServer.py", line 661, in finish
+    self.wfile.flush()
+  File "/usr/lib/python2.6/socket.py", line 297, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+[26/Feb/2014 21:22:27] "GET /static/js/skills.js HTTP/1.1" 200 1304
+[26/Feb/2014 21:22:28] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 200 23292
+[26/Feb/2014 21:22:28] "GET /questions HTTP/1.1" 200 7857
+[26/Feb/2014 21:22:29] "GET /static/js/questions.js HTTP/1.1" 200 1385
+[26/Feb/2014 21:22:33] "GET /student/Natasha.json HTTP/1.1" 200 92
+[26/Feb/2014 21:23:06] "POST /answered/Natasha HTTP/1.1" 200 18
+[26/Feb/2014 21:23:10] "GET /questions HTTP/1.1" 200 7857
+[26/Feb/2014 21:23:11] "GET /static/bower_components/jquery/jquery.min.js HTTP/1.1" 304 0
+[26/Feb/2014 21:23:11] "GET /static/bower_components/bootstrap/dist/js/bootstrap.js HTTP/1.1" 304 0
+[26/Feb/2014 21:23:11] "GET /static/js/style.css HTTP/1.1" 304 0
+[26/Feb/2014 21:23:11] "GET /static/bower_components/bootstrap/dist/css/bootstrap.css HTTP/1.1" 304 0
+[26/Feb/2014 21:23:11] "GET /static/js/questions.js HTTP/1.1" 304 0
+[26/Feb/2014 21:23:11] "GET /static/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff HTTP/1.1" 304 0
+[26/Feb/2014 21:23:13] "GET /student/Natasha.json HTTP/1.1" 200 154
