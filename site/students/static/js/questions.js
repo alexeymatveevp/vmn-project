@@ -27,15 +27,27 @@ function toogleStudentQuestionsProgress(studentName) {
         }
     }).done(function(data) {
     	$('#progress_bar').hide()
-        $('#questions li').each(function() {
+        $('#questions_container > div > ul > li').each(function() {
         	$(this).removeClass('alert-success')
         	$(this).addClass('alert-info')
         })
+        $('#questions_container > div > h2').css('text-decoration','none')
         var answeredQuestions = data.questions
         console.log(answeredQuestions)
         for (ind in answeredQuestions) {
             $('#'+answeredQuestions[ind]).removeClass('alert-info')
             $('#'+answeredQuestions[ind]).addClass('alert-success')
         }
+        $('#questions_container > div').each(function() {
+            var answeredAllQuestionsInMilestone = true
+            $(this).find('ul > li').each(function() {
+                if ($(this).hasClass('alert-success').toString() == "false") {
+                    answeredAllQuestionsInMilestone = false
+                }
+            })
+            if (answeredAllQuestionsInMilestone) {
+                $(this).find('h2').css('text-decoration','line-through')
+            }
+        })
     })
 }
